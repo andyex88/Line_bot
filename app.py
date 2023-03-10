@@ -44,11 +44,11 @@ def handle_message(event):
         package_id='1',
         sticker_id='1')
         r = sticker_message
-    elif msg in [Have you eaten?, have you eaten?]:
+    elif msg in ['Have you eaten?', 'have you eaten?']:
         r = "No"
-    elif msg in [How are you?, how are you?]:
+    elif msg in ['How are you?', 'how are you?']:
         r = "Hey, I am fine!"
-    elif msg in [Who are you?, who are you?]:
+    elif msg in ['Who are you?', 'who are you?']:
         r = "I am a Line robot"
 
 
