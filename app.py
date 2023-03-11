@@ -37,9 +37,9 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    r = "Hi, There!\nPlease enter specific words\n1. Sticker\n2. Have you eaten?\n3. How are you?\n4. Who are you?"
+    r = "Hi, There!\nPlease enter a specific number\n1. Sticker\n2. Have you eaten?\n3. How are you?\n4. Who are you?"
 
-    if msg in ['Sticker', 'sticker']:
+    if msg == '1':
         sticker_message = StickerSendMessage(
             package_id='1',
             sticker_id='1')
@@ -50,11 +50,11 @@ def handle_message(event):
 
         return
 
-    elif msg in ['Have you eaten?', 'have you eaten?']:
+    elif msg == '2':
         r = "No"
-    elif msg in ['How are you?', 'how are you?']:
+    elif msg == '3':
         r = "Hey, I am fine!"
-    elif msg in ['Who are you?', 'who are you?']:
+    elif msg == '4':
         r = "I am a Line robot"
 
 
