@@ -43,9 +43,13 @@ def handle_message(event):
         sticker_message = StickerSendMessage(
             package_id='1',
             sticker_id='1')
-        r = sticker_message
+
+        line_bot_api.reply_message(
+            event.reply_token,
+            sticker_message)
+
         return
-        
+
     elif msg in ['Have you eaten?', 'have you eaten?']:
         r = "No"
     elif msg in ['How are you?', 'how are you?']:
