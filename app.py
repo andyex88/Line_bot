@@ -37,7 +37,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    r = "Please enter specific words"
+    r = "Hi, There!\nPlease enter specific words"
 
     if msg in ['Sticker', 'sticker']:
         sticker_message = StickerSendMessage(
