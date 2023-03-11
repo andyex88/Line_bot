@@ -44,6 +44,8 @@ def handle_message(event):
             package_id='1',
             sticker_id='1')
         r = sticker_message
+        return
+        
     elif msg in ['Have you eaten?', 'have you eaten?']:
         r = "No"
     elif msg in ['How are you?', 'how are you?']:
