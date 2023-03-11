@@ -39,7 +39,7 @@ def handle_message(event):
     msg = event.message.text
     r = "Please enter specific words"
 
-    if msg in [Sticker, sticker]:
+    if msg in ['Sticker', 'sticker']:
         sticker_message = StickerSendMessage(
         package_id='1',
         sticker_id='1')
